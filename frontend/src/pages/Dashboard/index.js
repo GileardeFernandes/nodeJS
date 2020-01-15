@@ -1,4 +1,5 @@
 import React,{useEffect,useState} from 'react';
+import  { Link } from 'react-router-dom';
 import api from '../../services/api';
 import './styles.css';
 
@@ -28,12 +29,14 @@ export default function Dashboard(){
                <li key={spot._id}>
                    <header style={{backgroundImage: `url(${spot.thumbnail_url})`}}/>
                    <strong>{spot.company}</strong>
-                   <span>{spot.price}</span>
+                   <span>{spot.price ? `RS${spot.price}/dia` : 'GRATUITO'}</span>
                </li>
            ))}
-           
-
          </ul>
+
+         <Link  to="/new">
+           <button className="btn" >Cadastrar novo spot </button>
+         </Link>
        </>
 
     )

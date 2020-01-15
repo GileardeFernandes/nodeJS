@@ -1,6 +1,65 @@
-import React from 'react';
+import React, { useState, useMemo} from 'react';
+import './style.css'
+import camera from '../../assets/camera.svg';
 
-export default function New(){
+export default function New() {
+    const [thumbnail, setThumbnail] = useState(null);
+    const [company, setCompany] = useState('');
+    const [price, setPrice] = useState('');
+    const [techs, setTechs] = useState('');
 
-    return <h1>New</h1>
+    const preview = useMemo(() =>{
+      return thumbnail ? URL.createObjectURL(thumbnail) : null;
+    },[thumbnail]);
+
+    function handleSubmit(event) {
+        event.preventDefault();
+
+    }
+    return (
+        <>
+            <form onSubmit={handleSubmit}>
+                
+                <label 
+                 id="thumbnail"  
+                 style={{backgroundImage: `url(${preview})`}}
+                 className={thumbnail ? 'has-thumbnail' : ''}
+                 >
+                  <input  type="file" onChange={event => setThumbnail(event.target.files[0])}/>
+                  <img  src={camera}  alt="select img"  />
+                </label>
+
+                <label htmlFor="company">EMPRESA *</label>
+                <input
+                    id="company"
+                    placeholder="Sua empresa incrível"
+                    value={company}
+                    onChange={event => setCompany(event.target.value)}
+                />
+                
+                <label htmlFor="techs">TECNOLOGIAS * <span>(separadas por vírgula)</span> </label>
+                <input
+                    id="techs"
+                    placeholder="quais tecnologias usam ?"
+                    value={techs}
+                    onChange={event => setTechs(event.target.value)}
+                />
+
+
+                <label htmlFor="price">VALOR  DA DIÁRIA * <span>(em branco para GRATUITO)</span></label>
+                <input
+                    id="price"
+                    placeholder="valor cobrado por dia"
+                    value={price}
+                    onChange={event => setPrice(event.target.value)}
+                />
+
+               <button  className="btn">Cadastrar</button>
+
+
+            </form>
+
+
+        </>
+    );
 } 
