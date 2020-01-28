@@ -4,6 +4,8 @@ import { View, Text } from 'react-native';
 export default function List(){
 
     return <View>
-    <Text>Hello micael List</Text> 
+            <Text>Hello micael Lishjkhjkjhjkhjkhjkhjkhjkt</Text> 
     </View>
+    
 }
+
