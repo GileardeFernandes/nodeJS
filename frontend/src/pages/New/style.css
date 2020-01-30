@@ -22,3 +22,6 @@ label#thumbnail.has-thumbnail img{
     display:none;
 }
 
+.form-wrapper.form-new {
+    max-width: 500px;
+}

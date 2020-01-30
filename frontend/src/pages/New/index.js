@@ -1,7 +1,8 @@
 import React, { useState, useMemo} from 'react';
 import api from '../../services/api';
-import './style.css'
 import camera from '../../assets/camera.svg';
+import FormWrapper from '../FormWrapper';
+import './style.css'
 
 export default function New({history}) {
     const [thumbnail, setThumbnail] = useState(null);
@@ -31,7 +32,7 @@ export default function New({history}) {
     }
 
     return (
-        <>
+        <FormWrapper className="form-new">
             <form onSubmit={handleSubmit}>
                 
                 <label 
@@ -74,6 +75,6 @@ export default function New({history}) {
             </form>
 
 
-        </>
+        </FormWrapper>
     );
 } 

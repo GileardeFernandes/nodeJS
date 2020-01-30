@@ -24,20 +24,18 @@ body, input, button {
 
 .container {
   margin: 80px auto 0;
-  max-width: 450px; 
-  width: 100%; 
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items:center; 
 }
 
 .content{
   width:100%;
-  background:#fff;
+  /* background:#fff;
   margin-top: 50px;
   border-radius:4px;
-  padding: 30px; 
-}
+  padding:30px;  */
+} 
 
 .content > p {
   font-size: 22px;
@@ -45,10 +43,10 @@ body, input, button {
   margin-bottom: 30px; 
 }
 
-.content  form {
+/* .content  form {
   display: flex;
   flex-direction:  column;
-}
+} */
 
 .content  form label {
   font-size: 14px;

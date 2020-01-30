@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react';
 import  { Link } from 'react-router-dom';
 import api from '../../services/api';
+import  FormWrapper from '../FormWrapper';
 import './styles.css';
 
 export default function Dashboard(){
@@ -22,8 +23,7 @@ export default function Dashboard(){
 
     },[]);
     return (
-
-       <>
+       <FormWrapper className="dashboard">
          <ul className="spot-list" >
            {spots.map(spot => (
                <li key={spot._id}>
@@ -37,7 +37,7 @@ export default function Dashboard(){
          <Link  to="/new">
            <button className="btn" >Cadastrar novo spot </button>
          </Link>
-       </>
+       </FormWrapper>
 
     )
 } 
