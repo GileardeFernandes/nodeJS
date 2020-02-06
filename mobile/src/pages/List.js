@@ -1,11 +1,11 @@
 import  React , {useEffect, useState} from 'react';
-import { View, SafeAreaView, AsyncStorage, Image, StyleSheet} from 'react-native';
+import { ScrollView, SafeAreaView, AsyncStorage, Image, StyleSheet} from 'react-native';
 import SpotList  from '../components/SpotList';
 import logo  from '../assets/logo.png';
 
 export default function List(){
 
-    const [techs, setTechs] = useState(['ReactJS','NodeJS']);
+    const [techs, setTechs] = useState(['ReactJS','NodeJS','React Native']);
 
     useEffect(() => {
         AsyncStorage.getItem('techs').then(storageTechs => {
@@ -17,10 +17,11 @@ export default function List(){
     },[]);
 
     return (
-        <SafeAreaView  style={styles.container}>
-            <Image  style={styles.logo}  source={logo}/>
-
-            {techs.map(tech => <SpotList key={tech}  tech={tech}/> )} 
+        <SafeAreaView style={styles.container}>
+            <Image style={styles.logo} source={logo} />
+            <ScrollView>
+                {techs.map(tech => <SpotList key={tech} tech={tech} />)}
+            </ScrollView>
         </SafeAreaView>
     )    
 };
