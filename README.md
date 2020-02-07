@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Frontend" src="/GileardeFernandes/aircnc/blob/master/aircnc.png" width="100%" style="max-width:100%;">
+  <img src="/GileardeFernandes/aircnc/blob/master/aircnc.png?raw=true" alt="aircnc.png">
 </p>
 Projeto resultado da Semana OmniStack #9
 
