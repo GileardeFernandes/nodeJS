@@ -1,8 +1,9 @@
 # aircnc
 Projeto resultado da Semana OmniStack #9
 
-# 🚀  Tecnologias
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+<h2># 🚀 Tecnologias</h2>
+
+<p>Esse projeto foi desenvolvido com as seguintes tecnologias:</>
 <ul>
 <li> <a href="https://nodejs.org/en/" class="anchor"  target="_blank">Nodejs</a></li>
 <li><a href="https://reactjs.org/" target="_blank">React</a></li>
