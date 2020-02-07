@@ -1,5 +1,5 @@
 <p align="center">
-  <a target="_blank" rel="noopener noreferrer" href="/Rocketseat/semana-omnistack-9/blob/master/.github/aircnc.png"><img alt="Frontend" src="/Rocketseat/semana-omnistack-9/raw/master/.github/aircnc.png" width="100%" style="max-width:100%;"></a>
+  <img alt="Frontend" src="/GileardeFernandes/aircnc/blob/master/aircnc.png" width="100%" style="max-width:100%;">
 </p>
 Projeto resultado da Semana OmniStack #9
 
