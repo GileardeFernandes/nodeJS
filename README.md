@@ -1,6 +1,8 @@
 # aircnc
 Projeto resultado da Semana OmniStack #9
 
+![aircnc](https://user-images.githubusercontent.com/55728068/74037695-94997700-499d-11ea-8de4-b03459671f18.png)
+
 <h2># 🚀 Tecnologias</h2>
 
 <p>Esse projeto foi desenvolvido com as seguintes tecnologias:</>
