@@ -1,3 +1,7 @@
+- name: Coveralls GitHub Action
+  uses: coverallsapp/github-action@v1.0.1
+
+
 # aircnc
 
 Projeto resultado da Semana OmniStack #9
